@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_dialog/flutter_smart_dialog.dart';
-import 'package:lists_and_fetching_data_from_internet/json_api_future.dart';
+import 'package:lists_and_fetching_data_from_internet/dio_kullanimi.dart';
+// import 'package:lists_and_fetching_data_from_internet/json_api_future.dart';
 // import 'package:lists_and_fetching_data_from_internet/gridview_cesitleri.dart';
 // import 'package:lists_and_fetching_data_from_internet/card_listtile.dart';
 // import 'package:lists_and_fetching_data_from_internet/listview_kullanimi.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
           
           title: const Text('Liste ve Veri Islemleri'),
         ),
-        body: JsonApiFutureBuilder(),
+        body: DioKullanimi(),
         ),
       debugShowCheckedModeBanner: false,
       );
